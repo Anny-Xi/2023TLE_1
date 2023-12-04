@@ -1,16 +1,57 @@
 {
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build"
-    },
-    "devDependencies": {
-        "@popperjs/core": "^2.11.6",
-        "axios": "^1.6.1",
-        "bootstrap": "^5.2.3",
-        "laravel-vite-plugin": "^0.8.0",
-        "sass": "^1.56.1",
-        "vite": "^4.0.0"
-    }
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@popperjs/core": "^2.11.6",
+    "axios": "^1.6.1",
+    "bootstrap": "^5.2.3",
+    "laravel-vite-plugin": "^0.8.0",
+    "sass": "^1.56.1",
+    "vite": "^4.0.0"
+  },
+  "name": "tle_1",
+  "description": "<p align=\"center\"><a href=\"https://laravel.com\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg\" width=\"400\" alt=\"Laravel Logo\"></a></p>",
+  "version": "1.0.0",
+  "main": "vite.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "asynckit": "^0.4.0",
+    "combined-stream": "^1.0.8",
+    "chokidar": "^3.5.3",
+    "esbuild": "^0.18.20",
+    "anymatch": "^3.1.3",
+    "fill-range": "^7.0.1",
+    "follow-redirects": "^1.15.3",
+    "form-data": "^4.0.0",
+    "binary-extensions": "^2.2.0",
+    "immutable": "^4.3.4",
+    "braces": "^3.0.2",
+    "delayed-stream": "^1.0.0",
+    "glob-parent": "^5.1.2",
+    "is-glob": "^4.0.3",
+    "is-extglob": "^2.1.1",
+    "mime-types": "^2.1.35",
+    "is-number": "^7.0.0",
+    "picocolors": "^1.0.0",
+    "picomatch": "^2.3.1",
+    "nanoid": "^3.3.7",
+    "postcss": "^8.4.31",
+    "proxy-from-env": "^1.1.0",
+    "mime-db": "^1.52.0",
+    "rollup": "^3.29.4",
+    "is-binary-path": "^2.1.0",
+    "source-map-js": "^1.0.2",
+    "vite-plugin-full-reload": "^1.1.0",
+    "normalize-path": "^3.0.0",
+    "readdirp": "^3.6.0",
+    "to-regex-range": "^5.0.1"
+  },
+  "author": "",
+  "license": "ISC"
 }
