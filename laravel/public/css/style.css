@@ -1,0 +1,68 @@
+.arrow-down:hover,
+.arrow-up:hover,
+.arrow-left:hover,
+.arrow-right:hover {
+    background-color: #ddd;
+    cursor: pointer;
+    border-color: #888;
+}
+
+.arrows {
+    position: fixed;
+    bottom: 15%;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+.controller {
+    position: relative;
+    width: 200px; /* Je kunt deze waarde aanpassen afhankelijk van de gewenste grootte van de controller */
+    margin: 0 auto; /* Centreren van de controller */
+}
+
+.arrow-right, .arrow-left, .arrow-up, .arrow-down {
+    width: 90px; /* Je kunt deze waarde aanpassen afhankelijk van de gewenste grootte van de pijltjes */
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+
+}
+
+.arrow-down {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+.arrow-up {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+
+.arrow-right {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-left: 20px;
+}
+
+.arrow-left {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 20px;
+}
+
+.left-right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
