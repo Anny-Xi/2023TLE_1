@@ -18,44 +18,6 @@
 </head>
 <body>
 
-<script>
-    // Get the movable image element
-    const movableImage = document.getElementById('movableImage');
-
-    // Set the initial position
-    let positionX = 0;
-    let positionY = 0;
-
-    // Set the amount of pixels to move on each arrow key press
-    const moveAmount = 10;
-
-    // Function to update the position of the image
-    const updatePosition = () => {
-        movableImage.style.left = `${positionX}px`;
-        movableImage.style.top = `${positionY}px`;
-    };
-
-    // Event listener for arrow key presses
-    document.addEventListener('keydown', (event) => {
-        switch (event.key) {
-            case 'ArrowUp':
-                positionY -= moveAmount;
-                break;
-            case 'ArrowDown':
-                positionY += moveAmount;
-                break;
-            case 'ArrowLeft':
-                positionX -= moveAmount;
-                break;
-            case 'ArrowRight':
-                positionX += moveAmount;
-                break;
-        }
-
-        // Update the position of the image
-        updatePosition();
-    });
-</script>
 <main>
     <div class="live">
         <p id="placeholder">here comes live</p>
@@ -95,6 +57,45 @@
     </div>
 
 </main>
+
+<script>
+    // Get the movable image element
+    const movableImage = document.getElementById('movableImage');
+
+    // Set the initial position
+    let positionX = 0;
+    let positionY = 0;
+
+    // Set the amount of pixels to move on each arrow key press
+    const moveAmount = 10;
+
+    // Function to update the position of the image
+    const updatePosition = () => {
+        movableImage.style.left = `${positionX}px`;
+        movableImage.style.top = `${positionY}px`;
+    };
+
+    // Event listener for arrow key presses
+    document.addEventListener('keydown', (event) => {
+        switch (event.key) {
+            case 'ArrowUp':
+                positionY -= moveAmount;
+                break;
+            case 'ArrowDown':
+                positionY += moveAmount;
+                break;
+            case 'ArrowLeft':
+                positionX -= moveAmount;
+                break;
+            case 'ArrowRight':
+                positionX += moveAmount;
+                break;
+        }
+
+        // Update the position of the image
+        updatePosition();
+    });
+</script>
 
 </body>
 </html>
