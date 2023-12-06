@@ -1,80 +1,77 @@
-.arrow-down:hover,
-.arrow-up:hover,
-.arrow-left:hover,
-.arrow-right:hover {
-    background-color: rgba(255, 255, 255, 0.29);
-    cursor: pointer;
-    border-color: #888;
+body {
+    background: #718096;
+}
+
+main {
+    width: 90vw;
+    height: 95vh;
+    background: white;
+    margin: 0 auto;
+    position: relative;
+}
+
+#placeholder {
+    margin: auto auto;
+    text-align: center;
+    color: white;
+}
+
+.live {
+    position: relative;
+    background: #a0aec0;
+    top: 1vh;
+    width: 80vw;
+    height: 60vh;
+    margin: 0 auto;
 }
 
 .arrows {
-    position: fixed;
-    bottom: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.controller {
-    position: relative;
-    left: 50%;
-    bottom: 0;
-}
-.container {
     position: absolute;
-    bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
-    width: 100vw; /* Je kunt deze waarde aanpassen afhankelijk van de gewenste grootte van de controller */
-    height: 100vh;
-    /*margin: 0 auto; !* Centreren van de controller *!*/
+    bottom: 95px;
+    right: 80px;
 }
 
-.arrow-right, .arrow-left, .arrow-up, .arrow-down {
-    width: 90px; /* Je kunt deze waarde aanpassen afhankelijk van de gewenste grootte van de pijltjes */
-    height: 90px;
+.arrow {
+    width: max-content;
+    height: 70px;
     border-radius: 50%;
     border: 2px solid black;
     position: absolute;
 }
-.arrow-down, .arrow-up{
-    /*left: 50%;*/
+
+.arrow:hover {
+    background-color: rgba(40, 49, 225, 0.48);
+    cursor: pointer;
+    border-color: rgba(18, 23, 107, 0.48);
 }
 
-.arrow-up {
-    /*top: 0;*/
-    transform: translateX(-50%);
-    margin-top: 20px;
+.arrow-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
-.arrow-down {
-    /*bottom: 0;*/
-    transform: translateX(-50%);
-    margin-bottom: 20px;
+#up {
+    transform: translate(-100%, -146%);
+    /*margin-top: 0;*/
 }
 
-.arrow-left {
-    /*top: 50%;*/
-    /*left: 0;*/
-    transform: translateY(-50%);
-    margin-left: 20px;
+#down {
+    transform: translate(-100%, -5%);
+    /*margin-bottom: 20px;*/
 }
 
-.arrow-right {
-    /*top: 50%;*/
-    /*righ8t: 0;*/
-    transform: translateY(-50%);
-    margin-right: 20px;
+#left {
+    transform: translate(-175%, -76%);
+    /*margin-left: 20px;*/
 }
 
-/*.left-right {*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    transform: translate(-50%, -50%);*/
+#right {
+    transform: translate(-25%, -76%);
+    /*margin-right: 20px;*/
+}
 
-/*}*/
-
-.listeners-group{
+.listeners-group {
     height: 150px;
     width: 250px;
     position: absolute;
@@ -83,7 +80,7 @@
     border: 1px solid #1a202c;
 }
 
-.microphone{
+.microphone {
     height: 40px;
     width: 40px;
     position: absolute;
@@ -91,25 +88,53 @@
     left: 260px;
 }
 
-.card{
-    height: 20%;
-    width: 20%;
+.cards {
+    position: absolute;
+    bottom: 5vh;
+    right: 20vw;
+}
+
+.card {
+    font-size: 2em;
+    height: 20vh;
+    max-width: max-content;
+    min-width: 12vw;
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 0.5em;
     margin: 10px;
     box-sizing: border-box;
     display: inline-block;
+    text-align: center;
+    /*border-radius: 10%;*/
+
 }
 
-.beginpunt {
+/*.card :hover{*/
+/*    background-color: #1a202c;*/
+/*}*/
+.card p {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    top: 50%;
+}
+
+#start {
     background-color: cornflowerblue;
-    text-align: center;
 }
-.middelpunt {
+
+#middle {
     background-color: mediumpurple;
-    text-align: center;
 }
-.eindpunt {
+
+#end {
     background-color: slateblue;
-    text-align: center;
+
+}
+
+#start:hover, #middle:hover, #end:hover {
+    background-color: rgb(23, 1, 58);
+    cursor: pointer;
+    color: white;
 }

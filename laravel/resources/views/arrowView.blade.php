@@ -9,64 +9,44 @@
     <title>Document</title>
 </head>
 <body>
-<h1>VindiQu</h1>
 
-    <img class="listeners-group" src="{{asset('img/employee-listening.jpeg')}}" alt="listeners">
-    <img class="microphone" src="{{asset('img/microphone-on.png')}}" alt="microphone">
-
-     <div class="card beginpunt">
-        <p>Beginpunt</p>
-     </div>
-
-    <div class="card middelpunt">
-        <p>Middelpunt</p>
-    </div>
-
-    <div class="card eindpunt">
-        <p>Eindpunt</p>
-    </div>
-
-    <div class="arrows">
-        <div class="controller">
-            <img class="arrow-up" src="{{asset(('img/arrow_up.png'))}}" alt="up arrow">
-            <div class="left-right">
-                <img class="arrow-left" src="{{asset(('img/arrow_left.png'))}}" alt="left arrow">
-                <img class="arrow-right" src="{{asset(('img/arrow_right.png'))}}" alt="right arrow">
-            </div>
-            <img class="arrow-down" src="{{asset(('img/arrow_down.png'))}}" alt="down arrow">
-        </div>
-    </div>
 <main>
-    <h1>VindiQu Live</h1>
-    {{--<div class="arrows">--}}
     <div class="live">
         <p id="placeholder">here comes live</p>
     </div>
-    <div class="controller">
-        <div class="up">
-            <img class="arrow-up" src="{{asset(('img/arrow_up.png'))}}" alt="up arrow">
-        </div>
-        <div class="left">
-            <img class="arrow-left" src="{{asset(('img/arrow_left.png'))}}" alt="left arrow">
-        </div>
-        <div class="right">
-            <img class="arrow-right" src="{{asset(('img/arrow_right.png'))}}" alt="right arrow">
-        </div>
-        <div class="down">
-            <img class="arrow-down" src="{{asset(('img/arrow_down.png'))}}" alt="down arrow">
+    <img class="listeners-group" src="{{asset('img/employee-listening.jpeg')}}" alt="listeners">
+    <img class="microphone" src="{{asset('img/microphone-on.png')}}" alt="microphone">
+
+    <div class="cards">
+        <div class="card" id="start">
+            <p>Beginpunt</p>
         </div>
 
-        {{--old code--}}
-        {{--        <img class="arrow-up" src="{{asset(('img/arrow_up.png'))}}" alt="up arrow">--}}
-        {{--        <div class="left-right">--}}
-        {{--            <img class="arrow-left" src="{{asset(('img/arrow_left.png'))}}" alt="left arrow">--}}
-        {{--            <img class="arrow-right" src="{{asset(('img/arrow_right.png'))}}" alt="right arrow">--}}
-        {{--        </div>--}}
-        {{--        <img class="arrow-down" src="{{asset(('img/arrow_down.png'))}}" alt="down arrow">--}}
+        <div class="card" id="middle">
+            <p>Middelpunt</p>
+        </div>
+
+        <div class="card" id="end">
+            <p>Eindpunt</p>
+        </div>
     </div>
 
+    <div class="arrows">
+        <div class="arrow" id="up">
+            <img class="arrow-image" src="{{asset(('img/arrow_up.png'))}}" alt="up arrow">
+        </div>
+        <div class="arrow" id="left">
+            <img class="arrow-image" src="{{asset(('img/arrow_left.png'))}}" alt="left arrow">
+        </div>
+        <div class="arrow" id="right">
+            <img class="arrow-image" src="{{asset(('img/arrow_right.png'))}}" alt="right arrow">
+        </div>
+        <div class="arrow" id="down">
+            <img class="arrow-image" src="{{asset(('img/arrow_down.png'))}}" alt="down arrow">
+        </div>
 
-    {{--</div>--}}
+    </div>
+
 </main>
 
 </body>
