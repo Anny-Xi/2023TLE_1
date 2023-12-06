@@ -124,11 +124,10 @@
       <path value="$PROJECT_DIR$/laravel/vendor/spatie/backtrace" />
       <path value="$PROJECT_DIR$/laravel/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/laravel/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/laravel/vendor/carbonphp/carbon-doctrine-types" />
     </include_path>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="8.1">
-    <option name="suggestChangeDefaultLanguageLevel" value="false" />
-  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
   </component>

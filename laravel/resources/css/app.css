@@ -1,3 +1,7 @@
 body {
     background: #1a202c;
 }
+#img {
+    height: 40px;
+    transition: transform 0.2s;
+}
