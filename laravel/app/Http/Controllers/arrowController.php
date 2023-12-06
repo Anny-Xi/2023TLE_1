@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 class arrowController
 {
-public function livePage(){
+    public function livePage()
+    {
 
-return view('arrowView');
-}
+        return view('arrowView');
+    }
 
 }

@@ -1,8 +1,31 @@
+body{
+    background: #718096;
+    height: 100vh;
+}
+main{
+    width: 90vw;
+    height: 95vh;
+    background: white;
+    margin: 0 auto;
+}
+#placeholder{
+    margin: auto auto;
+    text-align: center;
+    color: white;
+}
+.live{
+    position: relative;
+    background: #a0aec0;
+    width: 80vw;
+    height: 60vh;
+    margin: 0 auto;
+}
+
 .arrow-down:hover,
 .arrow-up:hover,
 .arrow-left:hover,
 .arrow-right:hover {
-    background-color: #ddd;
+    background-color: rgba(255, 255, 255, 0.29);
     cursor: pointer;
     border-color: #888;
 }
@@ -10,14 +33,23 @@
 .arrows {
     position: fixed;
     bottom: 15%;
-    left: 40%;
+    left: 50%;
     transform: translateX(-50%);
 }
 
-.controller {
+.controller{
     position: relative;
-    width: 200px; /* Je kunt deze waarde aanpassen afhankelijk van de gewenste grootte van de controller */
-    margin: 0 auto; /* Centreren van de controller */
+    left: 50%;
+    bottom: 0;
+}
+.container {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    width: 100vw; /* Je kunt deze waarde aanpassen afhankelijk van de gewenste grootte van de controller */
+    height: 100vh;
+    /*margin: 0 auto; !* Centreren van de controller *!*/
 }
 
 .arrow-right, .arrow-left, .arrow-up, .arrow-down {
@@ -26,43 +58,43 @@
     border-radius: 50%;
     border: 2px solid black;
     position: absolute;
-
+}
+.arrow-down, .arrow-up{
+    /*left: 50%;*/
 }
 
-.arrow-down {
-    top: 0;
-    left: 50%;
+.arrow-up {
+    /*top: 0;*/
     transform: translateX(-50%);
     margin-top: 20px;
 }
 
-.arrow-up {
-    bottom: 0;
-    left: 50%;
+.arrow-down {
+    /*bottom: 0;*/
     transform: translateX(-50%);
     margin-bottom: 20px;
 }
 
-.arrow-right {
-    top: 50%;
-    left: 0;
+.arrow-left {
+    /*top: 50%;*/
+    /*left: 0;*/
     transform: translateY(-50%);
     margin-left: 20px;
 }
 
-.arrow-left {
-    top: 50%;
-    right: 0;
+.arrow-right {
+    /*top: 50%;*/
+    /*righ8t: 0;*/
     transform: translateY(-50%);
     margin-right: 20px;
 }
 
-.left-right {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/*.left-right {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
 
-}
+/*}*/
 
 
