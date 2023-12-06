@@ -6,15 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}">
-    <title>Document</title>
-    <style>
-        #movableImage {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 600px;
-        }
-    </style>
+    <title>Live</title>
+
+
 </head>
 <body>
 
@@ -71,8 +65,8 @@
 
     // Function to update the position of the image
     const updatePosition = () => {
-        movableImage.style.left = `${positionX}px`;
-        movableImage.style.top = `${positionY}px`;
+        movableImage.style.objectPosition = `${positionX}px ${positionY}px`;
+        // movableImage.style.top = `${positionY}px`;
     };
 
     // Event listener for arrow key presses
