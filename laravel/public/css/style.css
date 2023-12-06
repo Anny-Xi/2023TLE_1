@@ -1,26 +1,3 @@
-body{
-    background: #718096;
-    height: 100vh;
-}
-main{
-    width: 90vw;
-    height: 95vh;
-    background: white;
-    margin: 0 auto;
-}
-#placeholder{
-    margin: auto auto;
-    text-align: center;
-    color: white;
-}
-.live{
-    position: relative;
-    background: #a0aec0;
-    width: 80vw;
-    height: 60vh;
-    margin: 0 auto;
-}
-
 .arrow-down:hover,
 .arrow-up:hover,
 .arrow-left:hover,
@@ -37,7 +14,7 @@ main{
     transform: translateX(-50%);
 }
 
-.controller{
+.controller {
     position: relative;
     left: 50%;
     bottom: 0;
@@ -97,4 +74,42 @@ main{
 
 /*}*/
 
+.listeners-group{
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #1a202c;
+}
 
+.microphone{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 114px;
+    left: 260px;
+}
+
+.card{
+    height: 20%;
+    width: 20%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.beginpunt {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+.middelpunt {
+    background-color: mediumpurple;
+    text-align: center;
+}
+.eindpunt {
+    background-color: slateblue;
+    text-align: center;
+}
