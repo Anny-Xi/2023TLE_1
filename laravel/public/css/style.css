@@ -17,12 +17,19 @@ main {
 }
 
 .live {
+    text-align: center;
     position: relative;
     background: #a0aec0;
     top: 1vh;
     width: 80vw;
     height: 60vh;
     margin: 0 auto;
+}
+#live-information{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #movableImage {
@@ -103,6 +110,9 @@ main {
     bottom: 5vh;
     right: 20vw;
 }
+#viewer-cards{
+    right: 30%;
+}
 
 .card {
     font-size: 2em;
@@ -130,7 +140,7 @@ main {
     top: 50%;
 }
 
-#start {
+#start, #test-environment {
     background-color: cornflowerblue;
 }
 
@@ -143,7 +153,7 @@ main {
 
 }
 
-#start:hover, #middle:hover, #end:hover {
+#start:hover, #middle:hover, #end:hover, #test-environment:hover {
     background-color: rgb(23, 1, 58);
     cursor: pointer;
     color: white;

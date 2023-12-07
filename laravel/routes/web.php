@@ -22,3 +22,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/arrow',[App\Http\Controllers\arrowController::class, 'livePage'])->name('live');
+Route::get('/waiting',[App\Http\Controllers\ViewerController::class, 'waitingPage'])->name('waiting');
