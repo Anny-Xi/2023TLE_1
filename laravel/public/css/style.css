@@ -25,7 +25,8 @@ main {
     height: 60vh;
     margin: 0 auto;
 }
-#live-information{
+
+#live-information {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -110,8 +111,11 @@ main {
     bottom: 5vh;
     right: 20vw;
 }
-#viewer-cards{
-    right: 30%;
+
+#viewer-cards {
+    transform: translate(-50%, -50%);
+    top: 80%;
+    left: 50%;
 }
 
 .card {
