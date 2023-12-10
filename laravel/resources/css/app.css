@@ -1,0 +1,40 @@
+/*#region location */
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+}
+/* #endregion */
+/*#region animation  */
+.sound {
+    transition: 400ms ease;
+    overflow: hidden;
+}
+/* #endregion */
+/* #region icon */
+.sound-icon {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    align-items: center;
+}
+/* #endregion */
+/* #region slider width */
+input[type="range"] {
+    max-width: 4rem;
+}
+/* #endregion */
+/* #region height and hover */
+@media only screen and (min-width: 600px) {
+    .sound {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .sound:hover {
+        height: 7rem;
+        background-color: gray;
+    }
+}
+/* #endregion */
