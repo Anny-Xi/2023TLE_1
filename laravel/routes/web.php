@@ -21,3 +21,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/arrow',[App\Http\Controllers\arrowController::class, 'livePage']);
+
