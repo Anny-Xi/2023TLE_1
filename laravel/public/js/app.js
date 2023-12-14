@@ -154,5 +154,3 @@ function init(){
     //end of popup
 
 }
-
->>>>>>> Furkan
