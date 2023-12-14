@@ -61,16 +61,90 @@ function init(){
 
     });
 
+    // image move with arrows on screen
+
+    let arrowup = document.getElementById('up');
+    let arrowleft = document.getElementById('left');
+    let arrowright = document.getElementById('right');
+    let arrowdown = document.getElementById('down');
+
+
+    // add eventlistener for arrows on screen
+    arrowup.addEventListener('click',() => {
+        positionY += moveAmount;
+
+        if (positionX <= imageValueX) {
+            positionX = imageValueX;
+        } else if (positionX > 0) {
+            positionX = 0;
+        }
+        if (positionY <= imageValueY) {
+            positionY = imageValueY;
+        } else if (positionY > 0) {
+            positionY = 0;
+        }
+        updatePosition();
+    })
+
+    arrowdown.addEventListener('click', () => {
+        positionY -= moveAmount;
+
+        if (positionX <= imageValueX) {
+            positionX = imageValueX;
+        } else if (positionX > 0) {
+            positionX = 0;
+        }
+        if (positionY <= imageValueY) {
+            positionY = imageValueY;
+        } else if (positionY > 0) {
+            positionY = 0;
+        }
+        updatePosition();
+    })
+
+    arrowleft.addEventListener('click', () => {
+        positionX += moveAmount;
+
+        if (positionX <= imageValueX) {
+            positionX = imageValueX;
+        } else if (positionX > 0) {
+            positionX = 0;
+        }
+        if (positionY <= imageValueY) {
+            positionY = imageValueY;
+        } else if (positionY > 0) {
+            positionY = 0;
+        }
+        updatePosition();
+    });
+
+    arrowright.addEventListener('click', () => {
+        positionX -= moveAmount;
+
+        if (positionX <= imageValueX) {
+            positionX = imageValueX;
+        } else if (positionX > 0) {
+            positionX = 0;
+        }
+        if (positionY <= imageValueY) {
+            positionY = imageValueY;
+        } else if (positionY > 0) {
+            positionY = 0;
+        }
+        updatePosition();
+    });
+
+
     // popup viewers
     let popup = document.getElementById('pop-up');
     let popupViewers = document.getElementById('img-viewers');
     let popupImg = document.getElementById('viewerImage');
     let captionText = document.getElementById('caption');
 
-    popupViewers.onclick = function (){
+    popupImg.onclick = function (){
         console.log('click');
         popup.style.display = 'block';
-        popupImg.src = this.src;
+        popupViewers.src = this.src;
         captionText.innerHTML = this.alt;
     }
     let span = document.getElementsByClassName('close')[0];
@@ -80,3 +154,4 @@ function init(){
     //end of popup
 
 }
+
