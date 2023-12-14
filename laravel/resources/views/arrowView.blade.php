@@ -20,7 +20,18 @@
         <img id="movableImage" src="{{asset(('img/museumone.jpg'))}}" alt="Movable Image">
     </div>
 
-    <img class="listeners-group" src="{{asset('img/employee-listening.jpeg')}}" alt="listeners">
+    <img id="viewerImage" class="listeners-group" src="{{asset('img/employee-listening.jpeg')}}" alt="listeners">
+
+    <!-- The modal -->
+    <div id="pop-up" class="popup">
+        <!-- close button -->
+        <span class="close">&times;</span>
+        <!-- popup image -->
+        <img class="popupImage" id="img-viewers" >
+        <!-- popup text -->
+        <div id="caption"></div>
+    </div>
+
     <img class="microphone" src="{{asset('img/microphone-on.png')}}" alt="microphone">
 
 
