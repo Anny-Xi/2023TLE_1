@@ -21,7 +21,7 @@
     </div>
 
     <div class="quiz" id="quiz" >
-        <img src="{{asset(('img/star.png'))}}" alt="quiz start star">
+        <img id="quizImage" src="{{asset(('img/star.png'))}}" alt="quiz start star">
     </div>
 
 
