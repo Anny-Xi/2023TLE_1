@@ -20,6 +20,11 @@
         <img id="movableImage" src="{{asset(('img/museumone.jpg'))}}" alt="Movable Image">
     </div>
 
+    <div class="quiz" id="quiz" >
+        <img src="{{asset(('img/star.png'))}}" alt="quiz start star">
+    </div>
+
+
     <img id="viewerImage" class="listeners-group" src="{{asset('img/employee-listening.jpeg')}}" alt="listeners">
 
     <!-- The modal -->
@@ -31,6 +36,9 @@
         <!-- popup text -->
         <div id="caption"></div>
     </div>
+
+
+
 
     <img class="microphone" src="{{asset('img/microphone-on.png')}}" alt="microphone">
 
