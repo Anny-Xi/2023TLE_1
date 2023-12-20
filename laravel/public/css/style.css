@@ -1,13 +1,17 @@
 body {
-    background: #718096;
+    background: white;
 }
 
 main {
     width: 90vw;
-    height: 95vh;
+    height: 93vh;
     background: white;
     margin: 0 auto;
     position: relative;
+    border-radius: 1%;
+    border-style: outset;
+    border-width: 10px;
+    border-color: #b0b0b0;
 }
 
 .login_form{
