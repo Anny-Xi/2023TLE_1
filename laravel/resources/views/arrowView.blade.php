@@ -24,6 +24,27 @@
         <img src="{{asset(('img/star.png'))}}" alt="quiz start star">
     </div>
 
+    <!-- popup quiz -->
+
+
+    <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="closeQuiz">&times;</span>
+
+        <div class="quizContent" id="quizContent">
+            <form id="quizQuestions">
+                <h2>Wat is het grootste dier dat op aarde voorkomt en kan lengtes behalen van 33 meter?</h2>
+                <label for="var_string"><input type="radio" name="variable" value="100" id="var_string" />Blauwe Vinvis</label>
+                <label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />Olifant</label>
+                <label for="var_info"><input type="radio" name="variable" value="0" id="var_info" />Giraffe</label>
+                <label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>T-rex</label>
+                <button type="submit" value="Submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
 
     <img id="viewerImage" class="listeners-group" src="{{asset('img/employee-listening.jpeg')}}" alt="listeners">
 

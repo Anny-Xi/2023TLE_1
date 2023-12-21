@@ -153,5 +153,37 @@ function init(){
     }
     //end of popup
 
+
+    // quiz
+
+
+    let modal = document.getElementById('myModal');
+    let starImg = document.getElementById('quiz');
+    let popupContent = document.getElementById('quizContent');
+    let quizQuestion = document.getElementById('quizQuestions');
+
+    starImg.onclick = function () {
+        modal.style.display = 'block';
+        popupContent.innerHTML = quizQuestion.innerHTML;
+
+    };
+
+    let spanQuiz = document.getElementsByClassName('closeQuiz')[0];
+    spanQuiz.onclick = function () {
+        modal.style.display = 'none';
+    };
+
+    // quizQuestion.onsubmit = function () {
+    //     let variable = document.querySelector('input[name="variable"]:checked').value;
+    //
+    //     if (variable === '100') {
+    //         debugger;
+    //         popupContent.innerHTML += '<p>Het antwoord is correct!</p>';
+    //     } else {
+    //         popupContent.innerHTML += '<p>Onjuist!</p>';
+    //     }
+    //
+    //     return false;
+    // };
 }
 
