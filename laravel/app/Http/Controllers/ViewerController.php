@@ -11,4 +11,10 @@ class ViewerController extends Controller
         return view('waitView');
 
     }
+
+//    public function countdown($date, $time)
+//    {
+//        $dateToday = $date. ' '. $time;
+//        $now =
+//    }
 }

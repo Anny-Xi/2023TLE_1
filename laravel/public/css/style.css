@@ -25,10 +25,22 @@ main {
 
 #login {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 60%;
+    right: 0;
     transform: translate(-50%, 15%);
 
+}
+
+#register {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, -1%);
+
+}
+
+#font0-5 {
+    font-size: 0.5em;
 }
 
 /*#region animation  */
@@ -331,7 +343,24 @@ input[type="range"] {
     height: auto;
     /*object-position: 50% 50%;*/
 }
-#quizImage:hover{
+
+#quizImage:hover {
     border-radius: 50%;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#login-logo {
+    background: #5B7DE6;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+
+#login-logo-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+
 }

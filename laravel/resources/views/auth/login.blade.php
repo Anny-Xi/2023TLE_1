@@ -2,9 +2,11 @@
 
 @section('content')
     <main>
+        <div id="login-logo">
+            <img id="login-logo-image" src="{{asset(('img/vindiqu_logo.png'))}}" alt="logo">
+        </div>
         <div class="login_form">
             <div class="card" id="login">
-                <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -18,7 +20,7 @@
                                        name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
-                                <span class="invalid-feedback" role="alert">
+                                <span class="invalid-feedback" id="font0-5" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -34,7 +36,7 @@
                                        required autocomplete="current-password">
 
                                 @error('password')
-                                <span class="invalid-feedback" role="alert">
+                                <span class="invalid-feedback" id="font0-5" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
