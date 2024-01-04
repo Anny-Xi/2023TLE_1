@@ -123,6 +123,13 @@
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/storage/app" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/storage/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/21" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/2f" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/6c" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/bd" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
