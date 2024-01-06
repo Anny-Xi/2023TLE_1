@@ -2,7 +2,7 @@
 
 @section('content')
     <main>
-        <div id="login-logo">
+        <div id="header-logo">
             <img id="login-logo-image" src="{{asset(('img/vindiqu_logo.png'))}}" alt="logo">
         </div>
         <div class="login_form">
@@ -82,10 +82,11 @@
                             </div>
                         </div>
                     </form>
+
                 </div>
+                <a href="{{ route('login') }}" class="btn btn-primary">Login here</a>
+
             </div>
-        </div>
-        </div>
         </div>
     </main>
 @endsection
