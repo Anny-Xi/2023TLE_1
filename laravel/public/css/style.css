@@ -136,7 +136,6 @@ input[type="range"] {
     background-color: rgba(40, 49, 225, 0.48);
     cursor: pointer;
     border-color: rgba(18, 23, 107, 0.48);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .arrow-image {
@@ -227,20 +226,17 @@ input[type="range"] {
 
 #middle {
     background-color: mediumpurple;
-    text-align: center;
 }
 
 #end {
     background-color: slateblue;
-    text-align: center;
+
 }
 
 #start:hover, #middle:hover, #end:hover, #test-environment:hover {
     background-color: rgb(23, 1, 58);
     cursor: pointer;
     color: white;
-    border-style: inset;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* popup style */
@@ -303,6 +299,7 @@ input[type="range"] {
 }
 
 
+
 /* close button */
 
 .close {
@@ -331,20 +328,59 @@ input[type="range"] {
 
 /* star for quiz */
 
-#quiz {
-    position: absolute;
-    /*object-fit: cover;*/
-    text-align: right;
-    top: 1%;
+.quiz {
+    position: absolute ;
+    top: 0;
     right: 0;
-    /*transform: scale(0.6);*/
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-#quizImage {
-    object-fit: cover;
-    width: 45%;
-    height: auto;
-    /*object-position: 50% 50%;*/
+.quizContent{
+    background: #cccccc;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.quizContent {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#quizQuestions  {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.closeQuiz {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closeQuiz:hover,
+.closeQuiz:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #quizImage:hover {
@@ -398,4 +434,8 @@ a{
     background: #072c57;
 
 }
+
+
+
+
 
