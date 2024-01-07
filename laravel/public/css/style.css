@@ -99,7 +99,13 @@ input[type="range"] {
     height: 60vh;
     margin: 0 auto;
 }
+#live-waiting{
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 0);
 
+}
 #live-information {
     position: absolute;
     top: 50%;
@@ -136,6 +142,7 @@ input[type="range"] {
     background-color: rgba(40, 49, 225, 0.48);
     cursor: pointer;
     border-color: rgba(18, 23, 107, 0.48);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .arrow-image {
@@ -181,16 +188,36 @@ input[type="range"] {
     left: 260px;
 }
 
+.buttons-wait {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    justify-content: center;
+}
+
+
+.button-wait {
+    font-size: 2em;
+    height: 20vh;
+    width: 40%;
+    padding: 0.5em;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5%;
+    border-style: outset;
+    border-width: 5px;
+    border-color: rgba(18, 23, 107, 0.63);
+}
+
 .cards {
     position: absolute;
     bottom: 2vh;
     right: 16vw;
-}
-
-#viewer-cards {
-    transform: translate(-50%, -50%);
-    top: 80%;
-    left: 50%;
 }
 
 .card {
@@ -209,10 +236,11 @@ input[type="range"] {
     border-color: rgba(18, 23, 107, 0.63);
 }
 
+
 /*.card :hover{*/
 /*    background-color: #1a202c;*/
 /*}*/
-.card p {
+.button-wait p {
     position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -226,17 +254,20 @@ input[type="range"] {
 
 #middle {
     background-color: mediumpurple;
+    text-align: center;
 }
 
 #end {
     background-color: slateblue;
-
+    text-align: center;
 }
 
-#start:hover, #middle:hover, #end:hover, #test-environment:hover {
+#start:hover, #middle:hover, #end:hover, #test-environment:hover, #join-live:hover {
     background-color: rgb(23, 1, 58);
     cursor: pointer;
     color: white;
+    border-style: inset;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* popup style */
@@ -328,12 +359,18 @@ input[type="range"] {
 
 /* star for quiz */
 
-.quiz {
+#quiz {
     position: absolute ;
     top: 0;
-    right: 0;
+    left: 0;
     cursor: pointer;
     transition: 0.3s;
+}
+#quizImage {
+    object-fit: cover;
+    width: 45%;
+    height: auto;
+    /*object-position: 50% 50%;*/
 }
 
 .quizContent{
@@ -435,7 +472,38 @@ a{
 
 }
 
+.log-out{
+    position: absolute;
+    border-radius: 0.5%;
+    border-style: outset;
+    border-width: 3px;
+    border-color: slateblue;
+    background-color: white;
+    text-decoration: none;
+}
 
+#log-out-link{
+    text-decoration: none;
+    font-weight: bold;
+}
 
+.log-out{
+    position: absolute;
+    border-radius: 0.5%;
+    border-style: outset;
+    border-width: 3px;
+    border-color: slateblue;
+    background-color: white;
+    text-decoration: none;
+}
+
+#log-out-link{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
 
 

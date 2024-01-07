@@ -63,14 +63,14 @@ function init(){
 
     // image move with arrows on screen
 
-    let arrowup = document.getElementById('up');
-    let arrowleft = document.getElementById('left');
-    let arrowright = document.getElementById('right');
-    let arrowdown = document.getElementById('down');
+    let arrowUp = document.getElementById('up');
+    let arrowLeft = document.getElementById('left');
+    let arrowRight = document.getElementById('right');
+    let arrowDown = document.getElementById('down');
 
 
     // add eventlistener for arrows on screen
-    arrowup.addEventListener('click',() => {
+    arrowUp.addEventListener('click',() => {
         positionY += moveAmount;
 
         if (positionX <= imageValueX) {
@@ -86,7 +86,7 @@ function init(){
         updatePosition();
     })
 
-    arrowdown.addEventListener('click', () => {
+    arrowDown.addEventListener('click', () => {
         positionY -= moveAmount;
 
         if (positionX <= imageValueX) {
@@ -102,7 +102,7 @@ function init(){
         updatePosition();
     })
 
-    arrowleft.addEventListener('click', () => {
+    arrowLeft.addEventListener('click', () => {
         positionX += moveAmount;
 
         if (positionX <= imageValueX) {
@@ -118,7 +118,7 @@ function init(){
         updatePosition();
     });
 
-    arrowright.addEventListener('click', () => {
+    arrowRight.addEventListener('click', () => {
         positionX -= moveAmount;
 
         if (positionX <= imageValueX) {
@@ -165,6 +165,7 @@ function init(){
     starImg.onclick = function () {
         modal.style.display = 'block';
         popupContent.innerHTML = quizQuestion.innerHTML;
+        console.log("click on image")
 
     };
 

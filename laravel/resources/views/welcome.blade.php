@@ -35,7 +35,6 @@
                 </div>
             @endif
         </div>
-        <h1>Welkom bij Vindiqu IP Live</h1>
     </main>
 
 

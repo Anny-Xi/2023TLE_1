@@ -8,24 +8,74 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}">
     <title>Wait please</title>
 
+    <script>
+        window.addEventListener('load', timer);
+
+        function timer() {
+            let tourDateTime = @json($tourDateTime);
+
+            // Set the date we're counting down to
+            const countDownDate = new Date(tourDateTime).getTime();
+
+            // Update the count down every 1 second
+            const x = setInterval(function () {
+
+                const time = document.getElementById("time");
+                const live = document.getElementById("join-live");
+
+                // Get today's date and time
+                const now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                const distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                time.innerHTML = "Nog " + days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    time.innerHTML = "Live is al beginnen";
+                }
+                if (distance < -7200) {
+                    clearInterval(x);
+                    time.innerHTML = "Live is al afgelopen";
+                    live.innerHTML = "Ga terug naar tour lijst"
+                    live.href = '{{ route('home')}}'
+                }
+            }, 1000);
+        }
+    </script>
+
 
 </head>
 <body>
 
 <main>
-    <div class="live">
+    <div class="live" id="live-waiting">
         <div id="live-information">
-            <h1>Welkom bij het tour van *Locatie*</h1>
-            <h2>over 00:10:00 begint het live</h2>
+            <h1>Welkom bij het tour van {{$tour->location_museum}}</h1>
+            <h1>Live begint op {{$tour->start_time}}</h1>
+            <h2 id="time"></h2>
         </div>
 
     </div>
     {{--    <img class="listeners-group" src="{{asset('img/employee-listening.jpeg')}}" alt="listeners">--}}
     <img class="microphone" src="{{asset('img/microphone-on.png')}}" alt="microphone">
-    <div class="cards" id="viewer-cards">
-        <div class="card" id="test-environment">
+    <div class="buttons-wait" >
+        <div class="button-wait" id="test-environment">
             <p>Test hier uw live omgeving</p>
         </div>
+        <a class="button-wait" id="join-live" href='{{ route('liveView', $tour->id)}}'>
+            <p>Ga naar het live ruimte</p>
+        </a>
     </div>
 
     {{-- slider start--}}
