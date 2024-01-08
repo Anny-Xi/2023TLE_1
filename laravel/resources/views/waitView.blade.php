@@ -69,7 +69,7 @@
     </div>
     {{--    <img class="listeners-group" src="{{asset('img/employee-listening.jpeg')}}" alt="listeners">--}}
     <img class="microphone" src="{{asset('img/microphone-on.png')}}" alt="microphone">
-    <div class="buttons-wait" >
+    <div class="buttons-wait">
         <div class="button-wait" id="test-environment">
             <p>Test hier uw live omgeving</p>
         </div>
@@ -101,6 +101,10 @@
     </div>
     {{-- slider end--}}
 
+    <a id="back-home" href="{{ route('home')}}">
+        Terug naar Home
+    </a>
+    
 </main>
 
 
