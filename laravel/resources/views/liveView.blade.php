@@ -85,15 +85,16 @@
 
     </div>
 
-    <!-- The modal -->
-    <div id="pop-up" class="popup">
-        <!-- close button -->
-        <span class="close">&times;</span>
-        <!-- popup image -->
-        <img class="popupImage" id="img-viewers">
-        <!-- popup text -->
-        <div id="caption"></div>
-    </div>
+
+{{--    <!-- The modal -->--}}
+{{--    <div id="pop-up" class="popup">--}}
+{{--        <!-- close button -->--}}
+{{--        <span class="close">&times;</span>--}}
+{{--        <!-- popup image -->--}}
+{{--        <img class="popupImage" id="img-viewers">--}}
+{{--        <!-- popup text -->--}}
+{{--        <div id="caption"></div>--}}
+{{--    </div>--}}
 
 
     <img class="microphone" src="{{asset('img/microphone-on.png')}}" alt="microphone">

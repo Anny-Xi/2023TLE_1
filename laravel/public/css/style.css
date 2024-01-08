@@ -50,6 +50,8 @@ main {
 .sound {
     transition: 400ms ease;
     overflow: hidden;
+    margin-left: 730px;
+
 }
 
 /* #endregion */
@@ -60,6 +62,7 @@ main {
     flex-direction: column;
     overflow: visible;
     align-items: center;
+
 }
 
 /* #endregion */
@@ -520,9 +523,10 @@ a {
     background-color: white;
     border-color: #708be6;
 
-    #link {
-        color: #6a5acc;
-    }
+#link {
+    color: #6a5acc;
+}
+
 }
 
 .hidden {
@@ -537,6 +541,57 @@ a {
     border-color: slateblue;
     /*margin: -5% -5%;*/
 }
+
+/*test popup css */
+
+.testModal{
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+.testModal-content{
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.testClose{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.testClose:hover,
+.testClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.testPopup-title{
+    text-align: center;
+}
+
+.testPopup-cameraText,
+.testPopup-soundText {
+    display: inline-block; /* Plaatst de h3-tags naast elkaar */
+    margin-right: 5%; /* Voegt wat ruimte toe tussen de h3-tags */
+    margin-left: 220px;
+}
+
 
 
 
