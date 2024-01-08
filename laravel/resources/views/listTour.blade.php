@@ -18,19 +18,18 @@
 
 </head>
 <body>
-<div class="log-out">
-    <a class="" href="{{ route('logout') }}"
-       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-        Log uit
-    </a>
 
-    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-        @csrf
-    </form>
-</div>
 <main>
+    <div class="log-out">
+        <a id="link" href="{{ route('logout') }}"
+           onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+            Log uit
+        </a>
 
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+        </form>
+    </div>
     <div id="header-logo">
         <img id="login-logo-image" src="{{asset(('img/vindiqu_logo.png'))}}" alt="logo">
 

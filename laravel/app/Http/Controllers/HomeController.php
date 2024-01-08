@@ -28,8 +28,7 @@ class HomeController extends Controller
     {
 
 
-        $tours = Tour::whereDate('start_time', '>', date('Y-m-d H:i:s')
-        )->get();
+        $tours = Tour::where('start_time', '>', date('Y-m-d H:i:s'))->get();
         return view('listTour', ['tours' => $tours]);
 
     }

@@ -102,11 +102,9 @@
 {{--    @endif--}}
 
 
-    <div class="back-home">
         <a id="back-home" href="{{ route('home')}}">
             Terug naar Home
         </a>
-    </div>
 
 </main>
 
