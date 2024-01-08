@@ -11,6 +11,34 @@
     <script src="{{asset('js/mic_test.js')}}" defer></script>
 
 
+    <script>
+        var stop = function () {
+            var stream = video.srcObject;
+            var tracks = stream.getTracks();
+            for (var i = 0; i < tracks.length; i++) {
+                var track = tracks[i];
+                track.stop();
+            }
+            video.srcObject = null;
+        }
+        var start = function () {
+            var video = document.getElementById('video'),
+                vendorUrl = window.URL || window.webkitURL;
+            if (navigator.mediaDevices.getUserMedia) {
+                navigator.mediaDevices.getUserMedia({video: true})
+                    .then(function (stream) {
+                        video.srcObject = stream;
+                    }).catch(function (error) {
+                    console.log("Something went wrong!");
+                });
+            }
+        }
+        $(function () {
+            start();
+        });
+    </script>
+
+
 </head>
 <body>
 
@@ -53,7 +81,12 @@
     </div>
 
 
-    <img id="viewerImage" class="listeners-group" src="{{asset('img/employee-listening.jpeg')}}" alt="bezoekers">
+    <video id="video"  height="200px" autoplay></video>
+    <div class="text-right">
+        <a href="#!" class="btn btn-success" onClick="start()">Start Cam</a>
+        <a href="#!" class="btn btn-danger" onClick="stop()">Stop Cam</a>
+
+    </div>
 
     <!-- The modal -->
     <div id="pop-up" class="popup">
@@ -68,43 +101,43 @@
 
     <img class="microphone" src="{{asset('img/microphone-on.png')}}" alt="microphone">
 
-{{--    @if(\Illuminate\Support\Facades\Auth::check()&&\Illuminate\Support\Facades\Auth::user()->is_admin)--}}
-        <div class="cards @if(!\Illuminate\Support\Facades\Auth::user()->is_damin) hidden @endif">
-            <div class="card" id="start">
-                <p>Beginpunt</p>
-            </div>
-
-            <div class="card" id="middle">
-                <p>Middelpunt</p>
-            </div>
-
-            <div class="card" id="end">
-                <p>Eindpunt</p>
-            </div>
+    {{--    @if(\Illuminate\Support\Facades\Auth::check()&&\Illuminate\Support\Facades\Auth::user()->is_admin)--}}
+    <div class="cards @if(!Auth::user()->is_admin) hidden @endif">
+        <div class="card" id="start">
+            <p>Beginpunt</p>
         </div>
 
-        <div class="arrows @if(!\Illuminate\Support\Facades\Auth::user()->is_damin) hidden @endif">
-            <div class="arrow" id="up">
-                <img class="arrow-image" src="{{asset(('img/arrow_up.png'))}}" alt="up arrow">
-            </div>
-            <div class="arrow" id="left">
-                <img class="arrow-image" src="{{asset(('img/arrow_left.png'))}}" alt="left arrow">
-            </div>
-            <div class="arrow" id="right">
-                <img class="arrow-image" src="{{asset(('img/arrow_right.png'))}}" alt="right arrow">
-            </div>
-            <div class="arrow" id="down">
-                <img class="arrow-image" src="{{asset(('img/arrow_down.png'))}}" alt="down arrow">
-            </div>
-
+        <div class="card" id="middle">
+            <p>Middelpunt</p>
         </div>
 
-{{--    @endif--}}
+        <div class="card" id="end">
+            <p>Eindpunt</p>
+        </div>
+    </div>
+
+    <div class="arrows @if(!Auth::user()->is_admin) hidden @endif">
+        <div class="arrow" id="up">
+            <img class="arrow-image" src="{{asset(('img/arrow_up.png'))}}" alt="up arrow">
+        </div>
+        <div class="arrow" id="left">
+            <img class="arrow-image" src="{{asset(('img/arrow_left.png'))}}" alt="left arrow">
+        </div>
+        <div class="arrow" id="right">
+            <img class="arrow-image" src="{{asset(('img/arrow_right.png'))}}" alt="right arrow">
+        </div>
+        <div class="arrow" id="down">
+            <img class="arrow-image" src="{{asset(('img/arrow_down.png'))}}" alt="down arrow">
+        </div>
+
+    </div>
+
+    {{--    @endif--}}
 
 
-        <a id="back-home" href="{{ route('home')}}">
-            Terug naar Home
-        </a>
+    <a id="back-home" href="{{ route('home')}}">
+        Terug naar Home
+    </a>
 
 </main>
 

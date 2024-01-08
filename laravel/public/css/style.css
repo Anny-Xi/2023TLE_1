@@ -480,8 +480,8 @@ a {
 #back-home {
     position: absolute;
     padding: 0.5%;
-    bottom: 25%;
-    left: 0.5%;
+    bottom: 5%;
+    left: 20%;
     border-radius: 0.5%;
     border-style: outset;
     border-width: 3px;
@@ -494,7 +494,8 @@ a {
     background-color: #6a5acc;
     color: white;
 }
-.log-out{
+
+.log-out {
     z-index: 1;
     position: absolute;
     top: 2%;
@@ -509,21 +510,32 @@ a {
     background-color: #718ce7;
 }
 
-#link{
+#link {
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
-.log-out:hover{
+
+.log-out:hover {
     background-color: white;
     border-color: #708be6;
-    #link{
+
+    #link {
         color: #6a5acc;
     }
 }
 
 .hidden {
     display: none;
+}
+
+#video {
+    width: 250px;
+    height: 200px;
+    border-style: outset;
+    border-width: 5px;
+    border-color: slateblue;
+    /*margin: -5% -5%;*/
 }
 
 
