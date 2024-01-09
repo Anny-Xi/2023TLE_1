@@ -55,7 +55,7 @@
 
 
         // test popup
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             let testModal = document.getElementById("myModal");
             let testButton = document.getElementById("test-environment");
             let testSpan = document.querySelector(".testClose");
@@ -82,7 +82,7 @@
             var video = document.getElementById('video'),
                 vendorUrl = window.URL || window.webkitURL;
             if (navigator.mediaDevices.getUserMedia) {
-                navigator.mediaDevices.getUserMedia({ video: true })
+                navigator.mediaDevices.getUserMedia({video: true})
                     .then(function (stream) {
                         video.srcObject = stream;
                     }).catch(function (error) {
@@ -122,15 +122,18 @@
     {{--                        the modal--}}
     <div id="myModal" class="testModal">
         {{--                    the modal content--}}
-        <div class="testModal-content" >
+        <div class="testModal-content">
             <span class="testClose">&times;</span>
             <h1 class="testPopup-title">Test Hier Uw Live Omgeving</h1>
             <h3 class="testPopup-cameraText"> Test hier uw camera</h3>
-            <video id="video" width="100px" height="100px" autoplay></video>
-            <div class="text-right">
-                <a href="#!" class="testPopup-cameraText" onClick="stop()">Stop Cam</a>
-                <a href="#!" class="testPopup-cameraText" onClick="start()">Start Cam</a>
+            <div class="test-video">
+                <video id="video" width="100px" height="100px" autoplay></video>
+                <div class="text-center">
+                    <a href="#!" class="testPopup-cameraText test-button" onClick="start()">Start Cam</a>
+                    <a href="#!" class="testPopup-cameraText test-button"onClick="stop()">Stop Cam</a>
+                </div>
             </div>
+
             <h3 class="testPopup-soundText"> Test hier uw geluid</h3>
             {{-- slider start--}}
             <div class="sound">

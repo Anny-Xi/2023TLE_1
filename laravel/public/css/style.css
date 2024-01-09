@@ -523,14 +523,24 @@ a {
     background-color: white;
     border-color: #708be6;
 
-#link {
-    color: #6a5acc;
-}
+    #link {
+        color: #6a5acc;
+    }
 
 }
 
 .hidden {
     display: none;
+}
+
+.test-video{
+    top: 0;
+}
+
+.test-video #video {
+    position: relative;
+    transform: translate(-50%, 0);
+    left:50% ;
 }
 
 #video {
@@ -544,8 +554,7 @@ a {
 
 /*test popup css */
 
-.testModal{
-
+.testModal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -554,20 +563,21 @@ a {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 
 }
 
-.testModal-content{
+.testModal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    height: 50%;
 }
 
-.testClose{
+.testClose {
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -581,7 +591,7 @@ a {
     cursor: pointer;
 }
 
-.testPopup-title{
+.testPopup-title {
     text-align: center;
 }
 
@@ -589,7 +599,18 @@ a {
 .testPopup-soundText {
     display: inline-block; /* Plaatst de h3-tags naast elkaar */
     margin-right: 5%; /* Voegt wat ruimte toe tussen de h3-tags */
-    margin-left: 220px;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+.test-button{
+    border: solid;
+    padding: 0.5% 1%;
+}
+
+.test-button:hover{
+    background-color: #6a5acc;
+    color: white;
 }
 
 
