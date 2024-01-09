@@ -50,8 +50,6 @@ main {
 .sound {
     transition: 400ms ease;
     overflow: hidden;
-    margin-left: 730px;
-
 }
 
 /* #endregion */
@@ -62,7 +60,6 @@ main {
     flex-direction: column;
     overflow: visible;
     align-items: center;
-
 }
 
 /* #endregion */
@@ -241,10 +238,6 @@ input[type="range"] {
     border-color: rgba(18, 23, 107, 0.63);
 }
 
-
-/*.card :hover{*/
-/*    background-color: #1a202c;*/
-/*}*/
 .button-wait p {
     position: relative;
     left: 50%;
@@ -549,8 +542,9 @@ a {
     border-style: outset;
     border-width: 5px;
     border-color: slateblue;
-    /*margin: -5% -5%;*/
 }
+
+
 
 /*test popup css */
 
@@ -569,12 +563,15 @@ a {
 }
 
 .testModal-content {
+    position: absolute;
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
-    height: 50%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .testClose {
@@ -598,19 +595,35 @@ a {
 .testPopup-cameraText,
 .testPopup-soundText {
     display: inline-block; /* Plaatst de h3-tags naast elkaar */
-    margin-right: 5%; /* Voegt wat ruimte toe tussen de h3-tags */
-    margin-left: 25%;
-    margin-top: 2%;
+}
+.video-buttons{
+    display: flex;
+    margin: 0 auto;
 }
 
+.test{
+    width: 50%;
+}
 .test-button{
+    text-align: center;
     border: solid;
-    padding: 0.5% 1%;
+    width: 30%;
+    height: 10%;
+    padding: 0.8% 0.8%;
+    margin-left: 8%;
+}
+
+.test-button+.test-button{
+    margin-left: 17%;
 }
 
 .test-button:hover{
     background-color: #6a5acc;
     color: white;
+}
+
+.test-section{
+    display: flex;
 }
 
 

@@ -124,39 +124,49 @@
         {{--                    the modal content--}}
         <div class="testModal-content">
             <span class="testClose">&times;</span>
+
             <h1 class="testPopup-title">Test Hier Uw Live Omgeving</h1>
-            <h3 class="testPopup-cameraText"> Test hier uw camera</h3>
-            <div class="test-video">
-                <video id="video" width="100px" height="100px" autoplay></video>
-                <div class="text-center">
-                    <a href="#!" class="testPopup-cameraText test-button" onClick="start()">Start Cam</a>
-                    <a href="#!" class="testPopup-cameraText test-button"onClick="stop()">Stop Cam</a>
+
+            <div class="test-section">
+
+                <div class="test">
+                    <h3 class="testPopup-cameraText"> Test hier uw camera</h3>
+                    <div class="test-video">
+                        <video id="video" width="100px" height="100px" autoplay></video>
+                        <div class="video-buttons">
+                            <a href="#!" class="test-button" onClick="start()">Start Cam</a>
+                            <a href="#!" class="test-button" onClick="stop()">Stop Cam</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test">
+                    <h3 class="testPopup-soundText"> Test hier uw geluid</h3>
+                    {{-- slider start--}}
+                    <div class="sound">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"
+                            />
+                        </svg>
+                        <div class="sound-icon">
+                            <input type="range"/>
+                        </div>
+                    </div>
+
+                    {{-- slider end--}}
+
                 </div>
             </div>
-
-            <h3 class="testPopup-soundText"> Test hier uw geluid</h3>
-            {{-- slider start--}}
-            <div class="sound">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"
-                    />
-                </svg>
-
-                <div class="sound-icon">
-                    <input type="range"/>
-                </div>
-            </div>
-            {{-- slider end--}}
         </div>
     </div>
 
