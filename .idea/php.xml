@@ -125,6 +125,7 @@
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/yaml" />
       <path value="$PROJECT_DIR$/laravel/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/laravel/vendor/_laravel_idea" />
+      <path value="$PROJECT_DIR$/laravel/vendor/carbonphp/carbon-doctrine-types" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
