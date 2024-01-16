@@ -568,7 +568,7 @@ a {
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
-    height: 60%;
+    height: 70%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
