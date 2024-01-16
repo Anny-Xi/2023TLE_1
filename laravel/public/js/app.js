@@ -63,14 +63,14 @@ function init(){
 
     // image move with arrows on screen
 
-    let arrowup = document.getElementById('up');
-    let arrowleft = document.getElementById('left');
-    let arrowright = document.getElementById('right');
-    let arrowdown = document.getElementById('down');
+    let arrowUp = document.getElementById('up');
+    let arrowLeft = document.getElementById('left');
+    let arrowRight = document.getElementById('right');
+    let arrowDown = document.getElementById('down');
 
 
     // add eventlistener for arrows on screen
-    arrowup.addEventListener('click',() => {
+    arrowUp.addEventListener('click',() => {
         positionY += moveAmount;
 
         if (positionX <= imageValueX) {
@@ -86,7 +86,7 @@ function init(){
         updatePosition();
     })
 
-    arrowdown.addEventListener('click', () => {
+    arrowDown.addEventListener('click', () => {
         positionY -= moveAmount;
 
         if (positionX <= imageValueX) {
@@ -102,7 +102,7 @@ function init(){
         updatePosition();
     })
 
-    arrowleft.addEventListener('click', () => {
+    arrowLeft.addEventListener('click', () => {
         positionX += moveAmount;
 
         if (positionX <= imageValueX) {
@@ -118,7 +118,7 @@ function init(){
         updatePosition();
     });
 
-    arrowright.addEventListener('click', () => {
+    arrowRight.addEventListener('click', () => {
         positionX -= moveAmount;
 
         if (positionX <= imageValueX) {
@@ -136,21 +136,54 @@ function init(){
 
 
     // popup viewers
-    let popup = document.getElementById('pop-up');
-    let popupViewers = document.getElementById('img-viewers');
-    let popupImg = document.getElementById('viewerImage');
-    let captionText = document.getElementById('caption');
-
-    popupImg.onclick = function (){
-        console.log('click');
-        popup.style.display = 'block';
-        popupViewers.src = this.src;
-        captionText.innerHTML = this.alt;
-    }
-    let span = document.getElementsByClassName('close')[0];
-    span.onclick = function (){
-        popup.style.display = 'none';
-    }
+    // let popup = document.getElementById('pop-up');
+    // let popupViewers = document.getElementById('img-viewers');
+    // let popupImg = document.getElementById('viewerImage');
+    // let captionText = document.getElementById('caption');
+    //
+    // popupImg.onclick = function (){
+    //     console.log('click');
+    //     popup.style.display = 'block';
+    //     popupViewers.src = this.src;
+    //     captionText.innerHTML = this.alt;
+    // }
+    // let span = document.getElementsByClassName('close')[0];
+    // span.onclick = function (){
+    //     popup.style.display = 'none';
+    // }
     //end of popup
 
+
+    // quiz
+
+
+    let modal = document.getElementById('myModal');
+    let starImg = document.getElementById('quiz');
+    let popupContent = document.getElementById('quizContent');
+    let quizQuestion = document.getElementById('quizQuestions');
+
+    starImg.onclick = function () {
+        modal.style.display = 'block';
+        popupContent.innerHTML = quizQuestion.innerHTML;
+        console.log("click on image")
+
+    };
+
+    let spanQuiz = document.getElementsByClassName('closeQuiz')[0];
+    spanQuiz.onclick = function () {
+        modal.style.display = 'none';
+    };
+
+    // quizQuestion.onsubmit = function () {
+    //     let variable = document.querySelector('input[name="variable"]:checked').value;
+    //
+    //     if (variable === '100') {
+    //         debugger;
+    //         popupContent.innerHTML += '<p>Het antwoord is correct!</p>';
+    //     } else {
+    //         popupContent.innerHTML += '<p>Onjuist!</p>';
+    //     }
+    //
+    //     return false;
+    // };
 }
