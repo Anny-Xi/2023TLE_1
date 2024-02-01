@@ -36,7 +36,7 @@ class HomeController extends Controller
 
     public function tourCreate()
     {
-        if (!Auth::check()) {
+        if (!Auth::check() && !Auth::user()->is_admin) {
             $this->middleware('auth');
             return redirect('/')->with([
                 'message' => 'Je bent niet ingelogd.!',
@@ -50,10 +50,10 @@ class HomeController extends Controller
 
     public function tourStore(Request $request)
     {
-        if (!Auth::check()) {
+        if (!Auth::check() && !Auth::user()->is_admin) {
             $this->middleware('auth');
             return redirect()->back()->with([
-                'message' => 'Je bent niet ingelogd!',
+                'message' => 'Je bent niet admin!',
                 'status' => 'danger'
             ]);
         } else {

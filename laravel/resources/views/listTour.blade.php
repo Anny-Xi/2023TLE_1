@@ -36,7 +36,7 @@
         <img id="login-logo-image" src="{{asset(('img/vindiqu_logo.png'))}}" alt="logo">
 
     </div>
-    <div class="list-button right">
+    <div class="list-button right @if(!Auth::user()->is_admin) hidden @endif">
         <a id="link" href="{{ route('create') }}">
             Plan nieuw tour
         </a>
