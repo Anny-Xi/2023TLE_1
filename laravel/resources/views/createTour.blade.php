@@ -44,6 +44,13 @@
     <div id="home">
         <h1>Plan een nieuw tour</h1>
 
+        @if(session('message'))
+            <div class="alert alert-{{ session('status') }} alert-dismissible fade show mt-3" role="alert">
+                <strong>{{ session('message') }}</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
+
         <form method="POST" action="{{ route('store') }}" enctype="multipart/form-data">
             @csrf
 
