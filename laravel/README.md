@@ -34,13 +34,10 @@ To install all the packages, you can use this command
 
   composer install 
 
-  ```  
-
-```bash 
 
   npm install 
 
-  `` 
+```
 
 For running the code use: 
 
@@ -48,13 +45,14 @@ For running the code use:
 
   npm run dev 
 
-  ```  
+  
 
+```
 ```bash 
 
   PHP artisan serve 
 
-  ```  
+```  
 
 
 
