@@ -1,66 +1,77 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+README
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+#About
 
-## Learning Laravel
+This project is an IP-Car that can plan and host a livestream. The livestream can be viewed on a webpage. The IP-Car tour guide can move the camera with the arrows on the screen and keyboard.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+This repository is for the IP-Car interface and the web app.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+![readmeImage](https://github.com/Anny-Xi/2023TLE_1/assets/114316992/8f44b29f-ed00-4bfc-9988-f173550e6be8)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+# Installation webapp
 
-## Contributing
+To install the project on your local computer, you will need to have the following installed:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+PHP: You can download the latest version of PHP from https://php.org/.
 
-## Code of Conduct
+Composer: Composer is a dependency manager for PHP.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+You can download Composer from https://getcomposer.org/download/.
 
-## Security Vulnerabilities
+Node.js: Node.js is a JavaScript runtime environment. You can download Node.js from https://nodejs.org/en/download.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+To install all the packages, you can use this command
 
-## License
+```bash 
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+  composer install 
+
+  ```  
+
+```bash 
+
+  npm install 
+
+  `` 
+
+For running the code use: 
+
+```bash 
+
+  npm run dev 
+
+  ```  
+
+```bash 
+
+  PHP artisan serve 
+
+  ```  
+
+
+
+
+
+The web app is always running online; this live version can be accessed via the link: https://lobster-app-il85a.ondigitalocean.app/
+
+# Explanation web app
+
+The code is a bit messy, so don't hesitate to contact us.
+
+The web app consists of 4 pages: 'welcome.blade.php', 'waitView.blade.php', 'liveView.blade.php', and 'listTour.blade.php'. For styling and functionality, we have used CSS and JavaScript, which can be found in 'public/css/style.css' and 'public/js/app.js'.
+
+There is some code that is not used, like 'mic_test.js'.
+
+The reason why the 'mic_test.js' isn’t working is because there’s a loud sound when you start the code. We tried to fix the code, but nothing changed.
+
+We would appreciate any feedback you have on the project. Please feel free to contact us if you have any questions or suggestions. 
+
+ 
