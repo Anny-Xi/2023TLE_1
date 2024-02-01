@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <title>Laravel</title>
 
     <!-- Fonts -->
@@ -20,7 +22,7 @@
 <body>
 
 <main>
-    <div class="log-out">
+    <div class="list-button left">
         <a id="link" href="{{ route('logout') }}"
            onclick="event.preventDefault();document.getElementById('logout-form').submit();">
             Log uit
@@ -33,6 +35,11 @@
     <div id="header-logo">
         <img id="login-logo-image" src="{{asset(('img/vindiqu_logo.png'))}}" alt="logo">
 
+    </div>
+    <div class="list-button right @if(!Auth::user()->is_admin) hidden @endif">
+        <a id="link" href="{{ route('create') }}">
+            Plan nieuw tour
+        </a>
     </div>
     <div id="home">
         <h1>Tours</h1>
