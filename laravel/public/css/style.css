@@ -491,19 +491,26 @@ a {
     color: white;
 }
 
-.log-out {
+.list-button {
     z-index: 1;
     position: absolute;
-    top: 2%;
-    left: 0.5%;
     width: max-content;
     padding: 0.1% 0.5%;
     border-radius: 0.5%;
     border-style: outset;
     border-width: 5px;
     border-color: slateblue;
-
     background-color: #718ce7;
+}
+
+.left{
+    top: 2%;
+    left: 0.5%;
+}
+
+.right {
+    top: 2%;
+    right: 0.5%;
 }
 
 #link {
@@ -512,7 +519,7 @@ a {
     text-decoration: none;
 }
 
-.log-out:hover {
+.list-button:hover {
     background-color: white;
     border-color: #708be6;
 

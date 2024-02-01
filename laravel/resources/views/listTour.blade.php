@@ -22,7 +22,7 @@
 <body>
 
 <main>
-    <div class="log-out">
+    <div class="list-button left">
         <a id="link" href="{{ route('logout') }}"
            onclick="event.preventDefault();document.getElementById('logout-form').submit();">
             Log uit
@@ -35,6 +35,11 @@
     <div id="header-logo">
         <img id="login-logo-image" src="{{asset(('img/vindiqu_logo.png'))}}" alt="logo">
 
+    </div>
+    <div class="list-button right">
+        <a id="link" href="{{ route('create') }}">
+            Plan nieuw tour
+        </a>
     </div>
     <div id="home">
         <h1>Tours</h1>
