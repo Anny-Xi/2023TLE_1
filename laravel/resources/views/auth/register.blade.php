@@ -15,7 +15,7 @@
 
                         <div class="">
                             <label for="name"
-                                   class="">{{ __('Name') }}</label>
+                                   class="">{{ __('Naam') }}</label>
 
                             <div class="">
                                 <input id="name" type="text"
@@ -32,7 +32,7 @@
 
                         <div class="">
                             <label for="email"
-                                   class="">{{ __('Email Address') }}</label>
+                                   class="">{{ __('Email Adres') }}</label>
 
                             <div class="">
                                 <input id="email" type="email"
@@ -49,7 +49,7 @@
 
                         <div class="">
                             <label for="password"
-                                   class="">{{ __('Password') }}</label>
+                                   class="">{{ __('Wachtwoord') }}</label>
 
                             <div class="">
                                 <input id="password" type="password"
@@ -66,7 +66,7 @@
 
                         <div class="">
                             <label for="password-confirm"
-                                   class="">{{ __('Confirm Password') }}</label>
+                                   class="">{{ __('Wachtwoord bevestigen') }}</label>
 
                             <div class="">
                                 <input id="password-confirm" type="password" class="form-control"
@@ -77,14 +77,14 @@
                         <div class="">
                             <div class="">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                                    {{ __('Registeren') }}
                                 </button>
                             </div>
                         </div>
                     </form>
 
                 </div>
-                <a href="{{ route('login') }}" class="btn btn-primary">Login here</a>
+                <a href="{{ route('login') }}" class="btn btn-primary">Login hier</a>
 
             </div>
         </div>
